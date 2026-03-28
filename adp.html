@@ -1,0 +1,150 @@
+Here’s a complete starter template for a cricket-themed website using HTML, CSS, JavaScript, and Bootstrap. It’s structured so you can expand it with match updates, player stats, or even live score integrations later.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cricket World</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .hero {
+      background: url('https://upload.wikimedia.org/wikipedia/commons/7/7a/Cricket_bat_and_ball.jpg') no-repeat center center;
+      background-size: cover;
+      height: 60vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-shadow: 2px 2px 4px #000;
+    }
+    .card img {
+      height: 200px;
+      object-fit: cover;
+    }
+    footer {
+      background-color: #212529;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Cricket World</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#players">Players</a></li>
+          <li class="nav-item"><a class="nav-link" href="#matches">Matches</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to the World of Cricket</h1>
+  </section>
+
+  <!-- Players Section -->
+  <section id="players" class="container my-5">
+    <h2 class="text-center mb-4">Top Players</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://wallpapersafari.com/image/virat-kohli-desktop-wallpapers.jpg" class="card-img-top" alt="Virat Kohli">
+          <div class="card-body">
+            <h5 class="card-title">Virat Kohli</h5>
+            <p class="card-text">Known as the run machine, Kohli is one of the greatest batsmen in modern cricket.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://mir-s3-cdn-cf.behance.net/projects/404/74f5cb206678189.Y3JvcCwxMzgwLDEwODAsMjcwLDA.jpg" class="card-img-top" alt="MS Dhoni">
+          <div class="card-body">
+            <h5 class="card-title">MS Dhoni</h5>
+            <p class="card-text">Captain Cool, famous for his calm leadership and finishing skills.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://wallpapers.com/images/featured/sachin-tendulkar-eisybb8oqr2hlw31.jpg" class="card-img-top" alt="Sachin Tendulkar">
+          <div class="card-body">
+            <h5 class="card-title">Sachin Tendulkar</h5>
+            <p class="card-text">The God of Cricket, holding numerous records in international cricket.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Matches Section -->
+  <section id="matches" class="container my-5">
+    <h2 class="text-center mb-4">Upcoming Matches</h2>
+    <ul class="list-group">
+      <li class="list-group-item">India vs Australia - March 30, 2026</li>
+      <li class="list-group-item">England vs South Africa - April 2, 2026</li>
+      <li class="list-group-item">Pakistan vs New Zealand - April 5, 2026</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container my-5">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <form>
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Your Name">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Cricket World. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Simple JS example: alert on form submit
+    document.querySelector("form").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Thank you for contacting us!");
+    });
+  </script>
+</body>
+</html>
+
+
+Features included:
+- 🏏 Navbar with sections (Home, Players, Matches, Contact).
+- 🎯 Hero banner with cricket background.
+- 👥 Players cards showcasing famous cricketers.
+- 📅 Upcoming matches list.
+- 📩 Contact form with JavaScript alert on submission.
+- 🎨 Styled with Bootstrap and custom CSS.
+Would you like me to also add a live score widget integration (using a cricket API) so the site feels dynamic, or keep it as a static showcase?
